@@ -16,7 +16,7 @@ const Home = () => {
 
   return (
     <section
-      id="home"
+     
       className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-950 text-gray-100 pt-16"
     >
       {/* Background */}
