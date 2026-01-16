@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Menu, X, Code2, Sparkles, Home, User, Briefcase, FolderOpen, Mail, ArrowUpRight } from 'lucide-react';
 
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
@@ -59,7 +60,7 @@ const Navbar = () => {
             </div>
             <div className="flex flex-col">
               <span className="text-xl font-bold text-white tracking-wide">
-                PRIY<span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">ANSHU</span>
+               👧🏻 PRIY<span className="bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">ANSHU</span>
               </span>
               <div className="flex items-center space-x-1">
                 <Sparkles className="h-3 w-3 text-yellow-400" />

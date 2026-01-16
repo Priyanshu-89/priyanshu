@@ -268,62 +268,9 @@ const Portfolio = () => {
           ))}
         </div>
 
-        {/* Stats Section */}
-        <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-6">
-          <div className="text-center p-6 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700/50 shadow-xl">
-            <div className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-2">15+</div>
-            <div className="text-gray-300 font-medium">Projects</div>
-            <div className="text-xs text-gray-500 mt-2">Completed</div>
-          </div>
-          <div className="text-center p-6 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700/50 shadow-xl">
-            <div className="text-4xl font-bold bg-gradient-to-r from-emerald-400 to-cyan-500 bg-clip-text text-transparent mb-2">8</div>
-            <div className="text-gray-300 font-medium">Full Stack</div>
-            <div className="text-xs text-gray-500 mt-2">Applications</div>
-          </div>
-          <div className="text-center p-6 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700/50 shadow-xl">
-            <div className="text-4xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent mb-2">6</div>
-            <div className="text-gray-300 font-medium">Frameworks</div>
-            <div className="text-xs text-gray-500 mt-2">Mastered</div>
-          </div>
-          <div className="text-center p-6 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700/50 shadow-xl">
-            <div className="text-4xl font-bold bg-gradient-to-r from-orange-400 to-red-500 bg-clip-text text-transparent mb-2">Real World</div>
-            <div className="text-gray-300 font-medium">Brand Projects</div>
-            <div className="text-xs text-gray-500 mt-2">Live Sites</div>
-          </div>
-        </div>
+     
 
-        {/* Tech Stack Visualization */}
-        <div className="mt-16 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700/50 p-8">
-          <div className="flex items-center space-x-4 mb-8">
-            <div className="p-3 bg-gradient-to-r from-blue-900/30 to-purple-900/30 rounded-xl border border-blue-500/20">
-              <Cpu className="h-7 w-7 text-blue-400" />
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold text-white">Technology Stack</h3>
-              <p className="text-gray-400">Frameworks and tools used across projects</p>
-            </div>
-          </div>
-          <div className="flex flex-wrap gap-4">
-            <div className="px-6 py-3 bg-gradient-to-r from-blue-900/30 to-blue-900/10 rounded-xl border border-blue-500/20">
-              <span className="text-blue-400 font-medium">Next.js</span>
-            </div>
-            <div className="px-6 py-3 bg-gradient-to-r from-cyan-900/30 to-cyan-900/10 rounded-xl border border-cyan-500/20">
-              <span className="text-cyan-400 font-medium">React</span>
-            </div>
-            <div className="px-6 py-3 bg-gradient-to-r from-emerald-900/30 to-emerald-900/10 rounded-xl border border-emerald-500/20">
-              <span className="text-emerald-400 font-medium">MongoDB</span>
-            </div>
-            <div className="px-6 py-3 bg-gradient-to-r from-purple-900/30 to-purple-900/10 rounded-xl border border-purple-500/20">
-              <span className="text-purple-400 font-medium">Tailwind CSS</span>
-            </div>
-            <div className="px-6 py-3 bg-gradient-to-r from-yellow-900/30 to-yellow-900/10 rounded-xl border border-yellow-500/20">
-              <span className="text-yellow-400 font-medium">Python</span>
-            </div>
-            <div className="px-6 py-3 bg-gradient-to-r from-pink-900/30 to-pink-900/10 rounded-xl border border-pink-500/20">
-              <span className="text-pink-400 font-medium">NEXTAUTH</span>
-            </div>
-          </div>
-        </div>
+     
 
         {/* CTA */}
         <div className="mt-16 text-center">

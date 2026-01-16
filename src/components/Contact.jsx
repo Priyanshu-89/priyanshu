@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Mail, Phone, MapPin, Send, Linkedin, Github, MessageSquare, Paperclip, CheckCircle, Sparkles, Globe, Clock } from 'lucide-react';
+import { Mail,  MapPin, Send, Linkedin, Github, MessageSquare, Paperclip, CheckCircle, Sparkles, Globe, Clock } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -98,7 +98,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold text-white">Location</h4>
-                    <p className="text-gray-400 text-sm">Haryana, India</p>
+                    <p className="text-gray-400 text-sm">Gurugram, Haryana, India</p>
                     <p className="text-gray-500 text-xs">Open to remote opportunities</p>
                   </div>
                 </div>
@@ -285,21 +285,6 @@ const Contact = () => {
               )}
             </div>
 
-            {/* Contact Tips */}
-            <div className="mt-8 grid md:grid-cols-3 gap-6">
-              <div className="p-6 bg-gradient-to-br from-blue-900/20 to-cyan-900/20 rounded-xl border border-blue-500/20">
-                <div className="text-blue-400 text-sm font-semibold mb-2">Quick Response</div>
-                <p className="text-gray-300 text-sm">I typically respond within 24 hours on weekdays</p>
-              </div>
-              <div className="p-6 bg-gradient-to-br from-purple-900/20 to-pink-900/20 rounded-xl border border-purple-500/20">
-                <div className="text-purple-400 text-sm font-semibold mb-2">Project Details</div>
-                <p className="text-gray-300 text-sm">Include project scope, timeline, and budget for faster review</p>
-              </div>
-              <div className="p-6 bg-gradient-to-br from-emerald-900/20 to-teal-900/20 rounded-xl border border-emerald-500/20">
-                <div className="text-emerald-400 text-sm font-semibold mb-2">Availability</div>
-                <p className="text-gray-300 text-sm">Available for full-time, part-time, and freelance projects</p>
-              </div>
-            </div>
           </div>
         </div>
 

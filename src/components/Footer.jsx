@@ -1,4 +1,4 @@
-import { Code2, Heart, ArrowUp, Mail, Github, Linkedin, Sparkles, Coffee, Copyright } from 'lucide-react';
+import { Code2, Heart, ArrowUp, Mail, Github, Linkedin,  Coffee, Copyright } from 'lucide-react';
 import { useState, useEffect } from 'react';
 
 const Footer = () => {
@@ -53,9 +53,7 @@ const Footer = () => {
                 <p className="text-sm text-gray-400">Full Stack Developer</p>
               </div>
             </div>
-            <p className="text-gray-400 text-sm max-w-xs">
-              Crafting digital experiences with modern technologies and innovative solutions.
-            </p>
+           
             <div className="flex items-center space-x-4 pt-4">
               <a 
                 href="https://github.com/Priyanshu-89"
@@ -130,8 +128,8 @@ const Footer = () => {
               <span className="px-3 py-1.5 bg-cyan-900/30 text-cyan-300 text-xs rounded-full border border-cyan-500/20">React</span>
               <span className="px-3 py-1.5 bg-emerald-900/30 text-emerald-300 text-xs rounded-full border border-emerald-500/20">MongoDB</span>
               <span className="px-3 py-1.5 bg-purple-900/30 text-purple-300 text-xs rounded-full border border-purple-500/20">Node.js</span>
-              <span className="px-3 py-1.5 bg-amber-900/30 text-amber-300 text-xs rounded-full border border-amber-500/20">Python</span>
-              <span className="px-3 py-1.5 bg-pink-900/30 text-pink-300 text-xs rounded-full border border-pink-500/20">Django</span>
+              <span className="px-3 py-1.5 bg-amber-900/30 text-amber-300 text-xs rounded-full border border-amber-500/20">Tailwind CSS</span>
+              <span className="px-3 py-1.5 bg-pink-900/30 text-pink-300 text-xs rounded-full border border-pink-500/20">HTML5/CSS3</span>
             </div>
             <div className="mt-6 p-4 bg-gray-800/30 rounded-lg border border-gray-700/50">
               <div className="flex items-center justify-between text-sm">
@@ -167,12 +165,7 @@ const Footer = () => {
             <span className="font-medium">Personal Portfolio</span>
           </div>
           
-          <div className="flex items-center space-x-2">
-            <div className="flex items-center space-x-1 text-gray-400">
-              <Sparkles className="h-4 w-4 text-yellow-400" />
-              <span className="text-sm">v1.0.0</span>
-            </div>
-          </div>
+         
         </div>
 
         {/* Back to Top Button */}

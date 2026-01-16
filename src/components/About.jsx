@@ -1,4 +1,4 @@
-import { GraduationCap, Award, Target, Code, Cpu, Database, Zap, BookOpen, Rocket, Globe, Users, Brain } from 'lucide-react';
+import { GraduationCap, Award,  Code,  Zap, BookOpen, Rocket, Globe, Users, Brain } from 'lucide-react';
 import { useState } from 'react';
 
 const About = () => {
@@ -273,26 +273,7 @@ const About = () => {
                   </div>
                 </div>
               </div>
-              {/* Mission Statement */}
-              <div className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl p-8 mt-6 border border-gray-700/50 shadow-2xl">
-                <div className="flex items-center space-x-4 mb-6">
-                  <div className="p-3 bg-gradient-to-br from-blue-900/30 to-purple-900/30 rounded-xl border border-blue-500/20">
-                    <Target className="h-7 w-7 text-blue-400" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-white">Mission Statement</h3>
-                </div>
-                <p className="text-gray-300 leading-relaxed">
-                  To design and develop scalable, secure, and user-focused web applications
-                  using modern technologies like React and Next.js, delivering high-performance
-                  digital solutions that create real-world impact.
-                </p>
-                <div className="mt-6 pt-6 border-t border-gray-700/50">
-                  <div className="flex items-center justify-between text-sm text-gray-500">
-                    <span>Always Learning</span>
-                    <span>Always Building</span>
-                  </div>
-                </div>
-              </div>
+           
             </div>
 
 

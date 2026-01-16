@@ -1,4 +1,4 @@
-import { Calendar, Building, Layout, Code2, Briefcase, Rocket, Zap, Cpu, Users, Target, TrendingUp, Award, Sparkles, Globe, Shield, Server } from 'lucide-react';
+import { Calendar, Building, Layout, Code2, Briefcase, Rocket, Zap, Shield} from 'lucide-react';
 import { useState } from 'react';
 
 const Experience = () => {
@@ -76,32 +76,7 @@ const Experience = () => {
     }
   ];
 
-  const internships = [
-    {
-      name: "Aditya Technology Internship",
-      description: "Frontend Development & UI/UX Design",
-      duration: "8 Months",
-      focus: "Next.js, React, Modern Animations",
-      outcome: "Enhanced 5+ client websites with modern animations and responsive designs",
-      icon: <Sparkles className="h-5 w-5" />
-    },
-    {
-      name: "CepiaLabs Internship",
-      description: "Backend Development & System Architecture",
-      duration: "4 Months",
-      focus: "Node.js, API Development, Database Design",
-      outcome: "Optimized backend systems and contributed to live production code",
-      icon: <Server className="h-5 w-5" />
-    },
-    {
-      name: "Froyo Technologies Internship",
-      description: "Full-Stack Python Development",
-      duration: "3 Months",
-      focus: "Django, Python, Full-Stack Applications",
-      outcome: "Built complete web applications with Django framework",
-      icon: <Globe className="h-5 w-5" />
-    }
-  ];
+ 
 
   const skills = {
     "Frontend": ["Next.js", "React", "HTML5", "CSS3", "Tailwind CSS", "JavaScript"],
@@ -139,44 +114,7 @@ const Experience = () => {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-6 mb-8">
-            {internships.map((internship, index) => (
-              <div key={index} className="group bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700/50 p-6 hover:border-amber-500/30 transition-all duration-300 hover:-translate-y-1">
-                <div className="flex items-center space-x-4 mb-6">
-                  <div className="p-3 bg-gradient-to-r from-amber-900/30 to-orange-900/30 rounded-xl">
-                    {internship.icon}
-                  </div>
-                  <div>
-                    <h4 className="font-bold text-white">{internship.name}</h4>
-                    <span className="text-sm text-gray-400">{internship.duration}</span>
-                  </div>
-                </div>
-                
-                <div className="space-y-4">
-                  <div>
-                    <p className="text-gray-300 text-sm">{internship.description}</p>
-                  </div>
-                  
-                  <div className="p-3 bg-gray-800/50 rounded-lg">
-                    <div className="text-xs text-amber-400 font-semibold mb-1">Focus Area</div>
-                    <div className="text-white text-sm">{internship.focus}</div>
-                  </div>
-                  
-                  <div className="pt-4 border-t border-gray-700/50">
-                    <div className="text-xs text-gray-400 mb-1">Key Outcome</div>
-                    <p className="text-gray-300 text-sm">{internship.outcome}</p>
-                  </div>
-                </div>
-                
-                <div className="mt-6 pt-4 border-t border-gray-700/50">
-                  <div className="flex items-center justify-between text-sm">
-                    <span className="text-gray-400">Completed</span>
-                    <span className="px-2 py-1 bg-green-900/30 text-green-400 rounded text-xs">Successfully</span>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
+        
 
           {/* Internship Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
@@ -287,68 +225,7 @@ const Experience = () => {
             </div>
           </div>
 
-          {/* Responsibilities Panel */}
-          <div className="lg:col-span-1">
-            <div className="sticky top-24 bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700/50 p-8 shadow-2xl">
-              <div className="flex items-center space-x-3 mb-8">
-                <div className="p-3 bg-gradient-to-r from-blue-900/30 to-purple-900/30 rounded-xl border border-blue-500/20">
-                  <Target className="h-6 w-6 text-blue-400" />
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold text-white">Key Responsibilities</h3>
-                  <p className="text-sm text-gray-400">At {experiences[activeTab].company}</p>
-                </div>
-              </div>
-              
-              {/* Description */}
-              <div className="mb-6 p-4 bg-gray-800/50 rounded-lg border border-gray-700/50">
-                <p className="text-gray-300 text-sm italic">"{experiences[activeTab].description}"</p>
-              </div>
-              
-              <ul className="space-y-4 mb-8">
-                {experiences[activeTab].responsibilities.map((resp, index) => (
-                  <li key={index} className="flex items-start group">
-                    <div className="flex-shrink-0 mt-1">
-                      <div className="w-2 h-2 bg-gradient-to-r from-blue-400 to-purple-500 rounded-full group-hover:scale-125 transition-transform"></div>
-                    </div>
-                    <span className="ml-4 text-gray-300 group-hover:text-white transition-colors text-sm">
-                      {resp}
-                    </span>
-                  </li>
-                ))}
-              </ul>
-              
-              {/* Highlights */}
-              <div className="mb-8 p-4 bg-gradient-to-r from-blue-900/20 to-purple-900/20 rounded-lg border border-blue-500/20">
-                <h4 className="text-white font-semibold mb-3 flex items-center">
-                  <Sparkles className="h-4 w-4 mr-2 text-yellow-400" />
-                  Key Highlights
-                </h4>
-                <ul className="space-y-2">
-                  {experiences[activeTab].highlights.map((highlight, index) => (
-                    <li key={index} className="text-gray-300 text-sm flex items-start">
-                      <span className="text-yellow-400 mr-2">•</span>
-                      {highlight}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-              
-              <div className="pt-8 border-t border-gray-700/50">
-                <h4 className="text-white font-semibold mb-4">Technologies Used</h4>
-                <div className="flex flex-wrap gap-2">
-                  {experiences[activeTab].tech.map((tech, index) => (
-                    <span
-                      key={index}
-                      className="px-3 py-1.5 bg-gradient-to-r from-gray-800 to-gray-900 text-gray-300 text-sm rounded-lg border border-gray-700"
-                    >
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
+       
         </div>
 
         {/* Skills Overview */}
@@ -391,26 +268,7 @@ const Experience = () => {
           </div>
         </div>
 
-        {/* Career Growth Section */}
-        <div className="mt-16 text-center">
-          <div className="inline-flex flex-col items-center space-y-6 max-w-2xl mx-auto bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700/50 p-12">
-            <div className="p-4 bg-gradient-to-r from-blue-900/30 to-purple-900/30 rounded-xl border border-blue-500/20">
-              <TrendingUp className="h-12 w-12 text-blue-400" />
-            </div>
-            <h3 className="text-2xl font-bold text-white">Continuous Learning & Growth</h3>
-            <p className="text-gray-400">
-              Through my internships and professional experiences, I've developed a strong foundation in 
-              modern web technologies, problem-solving, and collaborative development. Each opportunity 
-              has contributed to my growth as a versatile full-stack developer.
-            </p>
-            <a
-              href="#contact"
-              className="inline-flex items-center justify-center px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white font-semibold rounded-xl hover:shadow-2xl hover:scale-105 transition-all duration-300"
-            >
-              Let's Work Together
-            </a>
-          </div>
-        </div>
+    
       </div>
     </section>
   );
