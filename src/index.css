@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Poppins:wght@500&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: "Poppins", serif;
+}
+
+
+/* Tech Card Base */
+.tech-card {
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(14px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.45);
+  transform-style: preserve-3d;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  pointer-events: auto;
+}
+
+/* 3D Hover Tilt */
+.tech-card:hover {
+  transform: perspective(800px) rotateX(18deg) rotateY(-18deg) scale(1.12);
+}
+
+/* Neon Glows */
+.neon-js:hover {
+  color: #facc15;
+  box-shadow: 0 0 25px #facc15, 0 0 60px rgba(250, 204, 21, 0.6);
+}
+
+.neon-ts:hover {
+  color: #60a5fa;
+  box-shadow: 0 0 25px #60a5fa, 0 0 60px rgba(96, 165, 250, 0.6);
+}
+
+.neon-react:hover {
+  color: #22d3ee;
+  box-shadow: 0 0 25px #22d3ee, 0 0 60px rgba(34, 211, 238, 0.6);
+}
+
+.neon-node:hover {
+  color: #dadada;
+  box-shadow: 0 0 25px #2a2a2a, 0 0 60px rgba(161, 165, 162, 0.6);
+}
+
+/* Floating Animations */
+@keyframes floatSlow {
+  50% { transform: translateY(-100px); }
+}
+@keyframes floatMedium {
+  50% { transform: translateY(-26px); }
+}
+@keyframes floatFast {
+  50% { transform: translateY(90px); }
+}
+@keyframes floatDelayed {
+  50% { transform: translateY(-22px); }
+}
+
+.animate-float-slow { animation: floatSlow 6s ease-in-out infinite; }
+.animate-float-medium { animation: floatMedium 7s ease-in-out infinite; }
+.animate-float-fast { animation: floatFast 5s ease-in-out infinite; }
+.animate-float-delayed { animation: floatDelayed 8s ease-in-out infinite; }
+
