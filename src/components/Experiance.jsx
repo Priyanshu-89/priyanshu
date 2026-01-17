@@ -5,6 +5,53 @@ const Experience = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   const experiences = [
+  {
+  company: "Bluestock Fintech",
+  role: "Software Development Engineer (SDE) Intern",
+  period: "Jan 2026 - Feb 2026",
+  duration: "1 month",
+  icon: <Code2 className="h-5 w-5" />,
+  color: "from-orange-500 to-yellow-500",
+  description: "Focused on backend API development and system optimization for live production applications",
+  responsibilities: [
+    "Assisted in backend API development, debugging, and testing for live projects",
+    "Supported feature implementation and participated in code reviews",
+    "Worked on deployment workflows and version control",
+    "Contributed to database design and optimization",
+    "Implemented RESTful APIs with proper error handling",
+    "Collaborated with cross-functional teams on product features"
+  ],
+  tech: ["Node.js", "REST APIs", "Git", "Testing", "Database Design"],
+  highlights: [
+    "Reduced API response time by 30% through optimization",
+    "Participated in deploying 3 major features to production",
+    "Improved code quality through rigorous testing"
+  ]
+},
+
+     {
+      company: "CepiaLabs",
+      role: "Programmer Analyst Intern",
+      period: "Oct 2025 - Jan 2026",
+      duration: "4 months",
+      icon: <Code2 className="h-5 w-5" />,
+      color: "from-purple-500 to-pink-500",
+      description: "Focused on backend API development and system optimization for live production applications",
+      responsibilities: [
+        "Assisted in backend API development, debugging, and testing for live projects",
+        "Supported feature implementation and participated in code reviews",
+        "Worked on deployment workflows and version control",
+        "Contributed to database design and optimization",
+        "Implemented RESTful APIs with proper error handling",
+        "Collaborated with cross-functional teams on product features"
+      ],
+      tech: ["Node.js", "REST APIs", "Git", "Testing", "Database Design"],
+      highlights: [
+        "Reduced API response time by 30% through optimization",
+        "Participated in deploying 3 major features to production",
+        "Improved code quality through rigorous testing"
+      ]
+    },
     {
       company: "Aditya Technology",
       role: "UI Designer & Frontend Developer",
@@ -28,29 +75,7 @@ const Experience = () => {
         "Worked on 5+ client projects simultaneously"
       ]
     },
-    {
-      company: "CepiaLabs",
-      role: "Programmer Analyst Intern",
-      period: "Oct 2025 - Jan 2026",
-      duration: "4 months",
-      icon: <Code2 className="h-5 w-5" />,
-      color: "from-purple-500 to-pink-500",
-      description: "Focused on backend API development and system optimization for live production applications",
-      responsibilities: [
-        "Assisted in backend API development, debugging, and testing for live projects",
-        "Supported feature implementation and participated in code reviews",
-        "Worked on deployment workflows and version control",
-        "Contributed to database design and optimization",
-        "Implemented RESTful APIs with proper error handling",
-        "Collaborated with cross-functional teams on product features"
-      ],
-      tech: ["Node.js", "REST APIs", "Git", "Testing", "Database Design"],
-      highlights: [
-        "Reduced API response time by 30% through optimization",
-        "Participated in deploying 3 major features to production",
-        "Improved code quality through rigorous testing"
-      ]
-    },
+   
     {
       company: "Froyo Technologies",
       role: "Web Development Intern (Python)",
@@ -112,7 +137,7 @@ const Experience = () => {
           {/* Internship Stats */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-8">
             <div className="text-center p-4 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700/50">
-              <div className="text-2xl font-bold text-amber-400 mb-1">3</div>
+              <div className="text-2xl font-bold text-amber-400 mb-1">4</div>
               <div className="text-sm text-gray-300">Internships</div>
             </div>
             <div className="text-center p-4 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700/50">
@@ -120,11 +145,11 @@ const Experience = () => {
               <div className="text-sm text-gray-300">Months Experience</div>
             </div>
             <div className="text-center p-4 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700/50">
-              <div className="text-2xl font-bold text-emerald-400 mb-1">10+</div>
+              <div className="text-2xl font-bold text-emerald-400 mb-1">15+</div>
               <div className="text-sm text-gray-300">Projects</div>
             </div>
             <div className="text-center p-4 bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl border border-gray-700/50">
-              <div className="text-2xl font-bold text-purple-400 mb-1">3</div>
+              <div className="text-2xl font-bold text-purple-400 mb-1">4</div>
               <div className="text-sm text-gray-300">Tech Stacks</div>
             </div>
           </div>
