@@ -1,5 +1,7 @@
 import { GraduationCap, Award,  Code,  Zap, BookOpen, Rocket, Globe, Users, Brain } from 'lucide-react';
 import { useState } from 'react';
+import { SiDeepin } from 'react-icons/si';
+import { TbPrompt } from 'react-icons/tb';
 
 const About = () => {
   const [activeCategory, setActiveCategory] = useState('all');
@@ -67,6 +69,16 @@ const About = () => {
       title: "Real-World Projects",
       description: "Successfully deployed two live projects",
       icon: <Users className="h-5 w-5" />
+    },
+     {
+      title: "DeepSeek for Beginners",
+      description: "Successfully completed the online course",
+      icon: <SiDeepin className="h-5 w-5" />
+    },
+     {
+      title: "Prompt Engineering",
+      description: "Introduction to Prompt Engineering with GitHub Copilot",
+      icon: <TbPrompt className="h-5 w-5" />
     }
   ];
 
