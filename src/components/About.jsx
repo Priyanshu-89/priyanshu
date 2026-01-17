@@ -41,7 +41,8 @@ const About = () => {
     "Backend Technologies": ["Node.js", "REST APIs", "JWT", "NextAuth"],
     "Databases & Tools": ["MongoDB", "MySQL", "Git", "GitHub", "Postman"],
     "Platforms": ["Vercel", "Netlify", "VS Code", "Figma"],
-    "Core Concepts": ["Data Structures & Algorithms", "OOP", "Operating Systems", "DBMS"]
+    "Core Concepts": ["Data Structures & Algorithms", "OOP", "Operating Systems", "DBMS"],
+    "Soft Skills": ["Problem Solving", "Team Collaboration", "Communication", "Agile Development"]
   };
 
   const skillCategories = Object.keys(skills);

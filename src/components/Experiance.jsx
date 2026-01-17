@@ -76,14 +76,7 @@ const Experience = () => {
     }
   ];
 
- 
 
-  const skills = {
-    "Frontend": ["Next.js", "React", "HTML5", "CSS3", "Tailwind CSS", "JavaScript"],
-    "Backend": ["Node.js", "Python", "Django", "REST APIs", "Authentication"],
-    "Tools": ["Git", "GitHub", "VS Code", "Postman", "Figma", "Vercel"],
-    "Soft Skills": ["Problem Solving", "Team Collaboration", "Communication", "Agile Development"]
-  };
 
   return (
     <section id="experience" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-black via-gray-900 to-black">
@@ -228,45 +221,7 @@ const Experience = () => {
        
         </div>
 
-        {/* Skills Overview */}
-        <div className="mb-16">
-          <div className="flex items-center space-x-4 mb-8">
-            <div className="p-3 bg-gradient-to-r from-emerald-900/30 to-cyan-900/30 rounded-xl border border-emerald-500/20">
-              <Zap className="h-7 w-7 text-emerald-400" />
-            </div>
-            <div>
-              <h3 className="text-2xl font-bold text-white">Skills & Expertise</h3>
-              <p className="text-gray-400">Technical and professional capabilities developed through internships</p>
-            </div>
-          </div>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {Object.entries(skills).map(([category, items], index) => (
-              <div 
-                key={category}
-                className="bg-gradient-to-br from-gray-800 to-gray-900 rounded-2xl border border-gray-700/50 p-6 hover:border-blue-500/30 transition-all duration-300"
-              >
-                <h4 className="font-bold text-white mb-4 flex items-center">
-                  <span className={`w-3 h-3 rounded-full mr-3 ${
-                    index === 0 ? 'bg-blue-500' :
-                    index === 1 ? 'bg-purple-500' :
-                    index === 2 ? 'bg-emerald-500' :
-                    'bg-amber-500'
-                  }`}></span>
-                  {category}
-                </h4>
-                <div className="space-y-3">
-                  {items.map((skill, skillIndex) => (
-                    <div key={skillIndex} className="flex items-center">
-                      <div className="w-2 h-2 bg-gray-600 rounded-full mr-3"></div>
-                      <span className="text-gray-300 text-sm">{skill}</span>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+     
 
     
       </div>
